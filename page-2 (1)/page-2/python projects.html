@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Projects | Rashid Lawal</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css background.css">
+  <link rel="stylesheet" href="navagationbar.css">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-bar {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      position: relative;
+      z-index: 100;
+    }
+
+    .menu-bar h1.logo {
+      display: inline-block;
+      font-size: 24px;
+    }
+
+    .menu-bar h1.logo span {
+      color: #00aced;
+    }
+
+    .menu-bar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu-bar ul li {
+      position: relative;
+    }
+
+    .menu-bar ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      z-index: 999;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      min-width: 220px;
+    }
+
+    .dropdown-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dropdown-menu ul li a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .dropdown-menu ul li a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .menu-bar ul li:hover .dropdown-menu {
+      display: block;
+    }
+
+    .projects-container {
+      padding: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .projects-container h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .github-link {
+      display: inline-block;
+      background-color: #333;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      margin: 20px 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .github-link:hover {
+      background-color: #555;
+    }
+
+    .github-link i {
+      margin-right: 10px;
+    }
+
+    .project-description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+      margin: 30px 0;
+      color: #666;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .project-card p {
+      color: #666;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="menu-bar">
+    <h1 class="logo">Rashid<span>Lawal</span></h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">Units <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="Revison and exams skill.html">Revision and Exam Skills</a></li>
+            <li><a href="14 Hour Project.html">14 Hour Project</a></li>
+            <li><a href="Cybersecurity.html">Cyber Security</a></li>
+            <li><a href="HTML & CSS Basics.html">HTML & CSS Basics</a></li>
+            <li><a href="Interview and exam skills.html">Interview Skills</a></li>
+            <li><a href="Fundamentals of Programming.html">Fundamentals of Programming</a></li>
+            <li><a href="Presentation Skills.html">Presentation Skills</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="About me.html">About Me</a></li>
+      <li><a href="Contact.html">Contact Me</a></li>
+      <li><a href="python projects.html">Python Projects</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="projects-container">
+    <h1>My Python Projects</h1>
+    
+    <div class="project-description">
+      <p>Here are some of the Python projects I've been working on. You can find all my code and projects on my GitHub repository below:</p>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="https://github.com/rashwab/py" target="_blank" class="github-link">
+        <i class="fab fa-github"></i>
+        View My Python Projects on GitHub
+      </a>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3><i class="fas fa-ticket-alt"></i> Help Desk Ticket Management System</h3>
+        <p>A comprehensive ticket management system built with Python for handling customer support requests. This project demonstrates database management, user authentication, and ticketing workflows.</p>
+        <div style="margin-top: 15px;">
+          <a href="https://github.com/rashwab/py/tree/main/Helpdesk%20Ticket%20Management%20System" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-plane"></i> Travel Expense Tracker</h3>
+        <p>A travel expense management application that helps track and categorize travel-related expenses. This project enhanced my skills in data processing, file handling, and expense calculation algorithms.</p>
+        <div style="margin-top: 15px;">
+          <a href="https://github.com/rashwab/py/tree/main/Travel_expense" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3><i class="fas fa-code"></i> More Projects</h3>
+        <p>Visit my GitHub repository to see all my Python projects, including code samples, documentation, and project details.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
